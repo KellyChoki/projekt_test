@@ -13,7 +13,7 @@ Countdown::Countdown(QWidget *parent, unsigned int remDur) :
     remainingDuration = remDur+1;
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &Countdown::showTimer);
-    timer->start(1000);
+    timer->start(100);
 
     ui->setupUi(this);
     showTimer();
